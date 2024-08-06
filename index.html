@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop It - All Categories</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/96c75676d8.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="assets/logo.png"Logo">
+                <span>Drop It</span>
+
+            </div>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <select>
+                        <option>All Categories</option>
+                        <option>Vegetables</option>
+                        <option>Fruits</option>
+                        <option>Dairy</option>
+                    </select>
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                <div class="search-icon">
+                    <img src="assets/Search-btn.png" alt="Search">
+                </div>
+            </div>
+
+
+            <div class="icons">
+                <img src="assets/Cart-1.png" alt="Cart">
+                <div class="profile-icon">
+                    <img src="assets/Profile.png" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="background">
+        <div class="breadcrumbs">Home / All Categories</div>
+        <div class="title"> All Categories</div>
+    </div>
+    <main>
+        <!-- Categories Section -->
+        <section class="category-grid">
+            <!-- Repeat this block for each category -->
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="assets/download.png" alt="image">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/e4518411-7707-4739-b51a-cc68dc7a1020.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Fruits & <br>
+                            Vegetables</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <img src="assets/masala.png" alt="masala-image" class="allcimg1">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-383-298,pr-true,f-auto,q-80/inventory/subcategory/d74a23c1-f7d4-4d5e-b022-4bf9c86f4231-image" alt="Categoryimage1"> -->
+                    <div class="info">
+                        <h6>Masala & <br>
+                            Dry fruits</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <img src="assets/frozenfood.png" alt="">
+                    <!-- <img src="data:image/jpeg;base64,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" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Frozen Food &<br>
+                            Ice Creams</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="assets/packagedfood.png" alt="image">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Packaged Food</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <img src="assets/cooldrinks.png" alt="">
+                    <!-- 
+        <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Cool Drinks <br>
+                            &Juices</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <img src="assets/stationary.png" alt="">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Electrical &<br>
+                            Accessories</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="assets/packagedfood.png" alt="image">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/e4518411-7707-4739-b51a-cc68dc7a1020.png" -->
+                        alt="Category Name">
+                    <div class="info">
+                        <h6>Stationery &<br>
+                            Crafts</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-383-298,pr-true,f-auto,q-80/inventory/subcategory/d74a23c1-f7d4-4d5e-b022-4bf9c86f4231-image" -->
+                        <!-- alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Atta, Rice<br>
+                            Oils & Dals</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <img src="assets/masala.png" alt="">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Sweet Cravings</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="assets/packagedfood.png" alt="image">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Toys & Sports</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <img src="assets/packagedfood.png" alt="image">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Apparel &
+                            Lifestyle</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <img src="assets/packagedfood.png" alt="image">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Jewelry &
+                            Accessories</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="assets/packagedfood.png" alt="image">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/e4518411-7707-4739-b51a-cc68dc7a1020.png" -->
+                        <!-- alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Ice creams &
+                            More</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-383-298,pr-true,f-auto,q-80/inventory/subcategory/d74a23c1-f7d4-4d5e-b022-4bf9c86f4231-image" -->
+                        <!-- alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Dairy bread &
+                            Eggs</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Munchies &
+                            Chips</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Meat, Eggs &
+                            Fish</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Biscuits &
+                            Cookies</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Breakfast &
+                            Sauces</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/e4518411-7707-4739-b51a-cc68dc7a1020.png"
+                        alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Tea, Coffee &
+                            More</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-383-298,pr-true,f-auto,q-80/inventory/subcategory/d74a23c1-f7d4-4d5e-b022-4bf9c86f4231-image"
+                        alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Makeup</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Skin care</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Fruits & vegitables</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <img src="assets/packagedfood.png" alt="image">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <div class="info">
+                        <h6>Bath & Body</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Hair Care</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/e4518411-7707-4739-b51a-cc68dc7a1020.png"
+                        alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Cleaning
+                            Essentials</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-383-298,pr-true,f-auto,q-80/inventory/subcategory/d74a23c1-f7d4-4d5e-b022-4bf9c86f4231-image"
+                        alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Home Needs</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Grooming
+                            Essentials</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Kitchenware &
+                            Appliances</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Feminine
+                            Hygiene </h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-3">
+                    <!-- <img src="images/fruits and veggies.png" alt="Category Name"> -->
+                    <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Health &
+                            Wellness</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/e4518411-7707-4739-b51a-cc68dc7a1020.png"
+                        alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Sexual Wellness</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-383-298,pr-true,f-auto,q-80/inventory/subcategory/d74a23c1-f7d4-4d5e-b022-4bf9c86f4231-image"
+                        alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Baby Care</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="fruits-and-veggies.html" style="text-decoration: none; color: inherit;">
+                <div class="card-2">
+                    <!-- <img src="https://cdn.zeptonow.com/production///tr:w-90,ar-383-298,pr-true,f-auto,q-80/inventory/subcategory/d74a23c1-f7d4-4d5e-b022-4bf9c86f4231-image"
+                        alt="Category Name"> -->
+                        <img src="assets/packagedfood.png" alt="image">
+                    <div class="info">
+                        <h6>Pet Care</h6>
+                        <p>20 items</p>
+                    </div>
+                </div>
+            </a>
+
+
+            <!-- Category cards end -->
+        </section>
+        <div class="harshita">
+            <h2 class="hello">Daily Best Sells</h2>
+            <div class="daily-best-buttons  hello">
+
+                <a href="index.html" class="daily-best-button">Featured</a>
+                <a href="popular.html" class="daily-best-button">Popular</a>
+                <a href="new-products.html" class="daily-best-button">New</a>
+            </div>
+
+            <div class="expires-in   hello">
+                <span>Expires in :</span>
+                <div id="timer" style="margin-left: 15px;">0 : 00 : 00</div>
+            </div>
+
+        </div>
+
+        <div class="products-wrapper">
+            <div class="product-card">
+                <div class="discount-label">Save 10%</div>
+                <img src="assets/product1.png" alt="tomato">
+                <p class="category">Vegitables&Fruits</p>
+                <p class="product-title">Tomato 1kg</p>
+                <div class="product-rating">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star inactive"></i>
+                    <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                </div>
+                <p class="seller"><span style="color: #ADADAD;">By</span> Mr. Food</p>
+                <div class="price">
+                    <span class="new-price">₹ 64</span>
+                    <span class="old-price">80</span>
+                </div>
+                <div class="sold">
+                    <div class="sold-bar" style="width: 60%; border-radius: 5px"></div>
+                    <span style="font-size: 12px; text-align: left">Sold: 20/50</span>
+                </div>
+                <!-- <button class="daily-add-to-cart-button"><i class="fas fa-shopping-cart"></i> Add to cart</button> -->
+                <div class="product-price-add">
+                    <div class="add-to-cart">
+                        <button class="daily-add-to-cart-button" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                    <div class="quantity-controls" style="display: none;">
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="daily-quantity">1</span>
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="discount-label">Save 10%</div>
+                <img src="assets/product1.png" alt="Tomato">
+                <p class="category">Vegitables&Fruits</p>
+                <p class="product-title">Tommato 1kg</p>
+                <div class="product-rating">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star inactive"></i>
+                    <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                </div>
+                <p class="seller"><span style="color: #ADADAD;">By</span> Mr. Food</p>
+                <div class="price">
+                    <span class="new-price">₹ 64</span>
+                    <span class="old-price">80</span>
+                </div>
+                <div class="sold">
+                    <div class="sold-bar" style="width: 60%; border-radius: 5px"></div>
+                    <span style="font-size: 12px; text-align: left">Sold: 20/50</span>
+                </div>
+                <!-- <button class="daily-add-to-cart-button"><i class="fas fa-shopping-cart"></i> Add to cart</button> -->
+                <div class="product-price-add">
+                    <div class="add-to-cart">
+                        <button class="daily-add-to-cart-button" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                    <div class="quantity-controls" style="display: none;">
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="daily-quantity">1</span>
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="discount-label">Save 10%</div>
+                <img src="assets/product1.png" alt="Tomato">
+                <p class="category">Vegitables&Fruits</p>
+                <p class="product-title">Tomato 1kg</p>
+                <div class="product-rating">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star inactive"></i>
+                    <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                </div>
+                <p class="seller"><span style="color: #ADADAD;">By</span> Mr. Food</p>
+                <div class="price">
+                    <span class="new-price">₹ 64</span>
+                    <span class="old-price">80</span>
+                </div>
+                <div class="sold">
+                    <div class="sold-bar" style="width: 60%; border-radius: 5px"></div>
+                    <span style="font-size: 12px; text-align: left">Sold: 20/50</span>
+                </div>
+                <!-- <button class="daily-add-to-cart-button"><i class="fas fa-shopping-cart"></i> Add to cart</button> -->
+                <div class="product-price-add">
+                    <div class="add-to-cart">
+                        <button class="daily-add-to-cart-button" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                    <div class="quantity-controls" style="display: none;">
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="daily-quantity">1</span>
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="discount-label">Save 10%</div>
+                <img src="assets/product1.png" alt="Tomato">
+                <p class="category">Vegitables&Fruits</p>
+                <p class="product-title">Tomato 1kg</p>
+                <div class="product-rating">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star inactive"></i>
+                    <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                </div>
+                <p class="seller"><span style="color: #ADADAD;">By</span> Mr. Food</p>
+                <div class="price">
+                    <span class="new-price">₹ 64</span>
+                    <span class="old-price">80</span>
+                </div>
+                <div class="sold">
+                    <div class="sold-bar" style="width: 60%; border-radius: 5px"></div>
+                    <span style="font-size: 12px; text-align: left">Sold: 20/50</span>
+                </div>
+                <!-- <button class="daily-add-to-cart-button"><i class="fas fa-shopping-cart"></i> Add to cart</button> -->
+                <div class="product-price-add">
+                    <div class="add-to-cart">
+                        <button class="daily-add-to-cart-button" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                    <div class="quantity-controls" style="display: none;">
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="daily-quantity">1</span>
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="discount-label">Save 10%</div>
+                <img src="assets/product1.png" alt="Tomato">
+                <p class="category">Vegitables&Fruits</p>
+                <p class="product-title">Tomato 1kg</p>
+                <div class="product-rating">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star inactive"></i>
+                    <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                </div>
+                <p class="seller"><span style="color: #ADADAD;">By</span> Mr. Food</p>
+                <div class="price">
+                    <span class="new-price">₹ 64</span>
+                    <span class="old-price">80</span>
+                </div>
+                <div class="sold">
+                    <div class="sold-bar" style="width: 60%; border-radius: 5px"></div>
+                    <span style="font-size: 12px; text-align: left">Sold: 20/50</span>
+                </div>
+                <!-- <button class="daily-add-to-cart-button"><i class="fas fa-shopping-cart"></i> Add to cart</button> -->
+                <div class="product-price-add">
+                    <div class="add-to-cart">
+                        <button class="daily-add-to-cart-button" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                    <div class="quantity-controls" style="display: none;">
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="daily-quantity">1</span>
+                        <button class="daily-best-quantity" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- email new memver -->
+            <!-- <div class="new-member-offer">
+              <h3>10% OFF</h3>
+              <p style="color: #3BB77E; font-size: 16px;">For new members signing up for the first time</p>
+              <form class="signup-form">
+
+                  <p style="color:#000000; text-align: left;">Email Address <span style="color: red;">*</span></p>
+                  <div class="input-wrapper">
+                      <i class="fa-regular fa-envelope"></i>
+                      <input type="email" placeholder="abc@gmail.com" required>
+                  </div>              
+                  <p style="color:#000000; text-align: left;">Password <span style="color: red;">*</span></p>
+
+                  <div class="input-wrapper">
+                      <i class="fa-solid fa-key"></i>
+                      <input type="password" placeholder="Maximum 8 characters" required>
+
+                  </div>  
+
+                  <button type="submit">Register Now</button>
+              </form>
+          </div> -->
+        </div>
+        </div>
+
+        <!-- top rated -->
+        <div class="top-container">
+            <div class="top">
+                <p class="top-sells-heading">Top Sells</p>
+                <div class="product">
+                    <img src="assets/ashirvad.png" alt="aashirvaad">
+                    <div class="product-info">
+                        <p class="top-product-name">Aashirvaad select</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/leaf.png" alt="leaf">
+                    <div class="product-info">
+                        <p class="top-product-name">Lorem Ipsum</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/starwberry.png" alt="starwberry">
+                    <div class="product-info">
+                        <p class="top-product-name">Lorem Ipsum</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="top">
+                <p class="top-sells-heading">Top Rating</p>
+                <div class="product">
+                    <img src="assets/ashirvad.png" alt="Sugar">
+                    <div class="product-info">
+                        <p class="top-product-name">White Sugar</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/salt.png" alt="starwberry">
+                    <div class="product-info">
+                        <p class="top-product-name">Lorem Ipsum</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/carrot.png" alt="starwberry">
+                    <div class="product-info">
+                        <p class="top-product-name">Lorem Ipsum</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top">
+                <p class="top-sells-heading">Trending Items</p>
+                <div class="product">
+                    <img src="assets/starwberry.png" alt="starwberry">
+                    <div class="product-info">
+                        <p class="top-product-name">Carrots 1kg</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/leaf.png" alt="potato">
+                    <div class="product-info">
+                        <p class="top-product-name">Lorem Ipsum</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/ashirvad.png" alt="carrot">
+                    <div class="product-info">
+                        <p class="top-product-name">Lorem Ipsum</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top">
+                <p class="top-sells-heading">Recently added</p>
+                <div class="product">
+                    <img src="assets/starwberry.png" alt="starwberry">
+                    <div class="product-info">
+                        <p class="top-product-name">Starwberry 1kgg</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/battery.png" alt="starwberry">
+                    <div class="product-info">
+                        <p class="top-product-name">Lorem Ipsum</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/gadget.png" alt="starwberry">
+                    <div class="product-info">
+                        <p class="top-product-name">Lorem Ipsum</p>
+                        <div class="product-rating" style="margin-bottom: 5px;">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star inactive"></i>
+                            <span style="font-size: 12px; color: #ADADAD;">(4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="new-price">₹ 64</span>
+                            <span class="old-price">80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="daily-deals">
+
+                <footer>
+        <div class="footer-top">
+            <div class="contact-info">
+           <div>
+                   <div style="display: flex; align-items: center;">
+                       <img src="assets/logo.png" alt="Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+                       <h4 style="margin: 0;">Drop It</h4>
+                   </div>
+                   <ul style="list-style-type: none; padding: 0;">
+                       <li>
+                           <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
+                           <a href="#">Address</a>
+                       </li>
+                       <li>
+                           <i class="fas fa-phone" style="margin-right: 10px;"></i>
+                           <a href="#">Call us</a>
+                       </li>
+                       <li>
+                           <i class="fas fa-envelope" style="margin-right: 10px;"></i>
+                           <a href="#">Email</a>
+                       </li>
+                       <li>
+                           <i class="fas fa-clock" style="margin-right: 10px;"></i>
+                           <a href="#">Work Hours</a>
+                       </li>
+                   </ul>
+   
+               </ul>
+           </div>
+           </div>
+           <div>
+               <h4>Account</h4>
+               <ul>
+                   <li><a href="#">Wishlist</a></li>
+                   <li><a href="#">Cart</a></li>
+                   <li><a href="#">Track Orders</a></li>
+                   <li><a href="#">Shipping & Delivery</a></li>
+               </ul>
+           </div>
+           <div>
+               <h4>Useful Links</h4>
+               <ul>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">Hot Deals</a></li>
+                   <li><a href="#">Promotions</a></li>
+               </ul>
+           </div>
+           <div>
+               <h4>Help Centtre</h4>
+               <ul>
+                   <li><a href="#">Payments</a></li>
+                   <li><a href="#">Refund</a></li>
+                   <li><a href="#">Checkout</a></li>
+                   <li><a href="#">Q&A</a></li>
+                   <li><a href="#">Privacy Policy</a></li>                
+               </ul>
+           </div>
+       </div>
+        <div class="footer-bottom">
+            <div style="display: flex; align-items: center;">
+                <p style="color: black;">&copy; 2024 Grocery Mart. All rights reserved. | <a href="#">Privacy Policy</a></p>
+
+            </div>
+            <div class="social-links1">
+                <a href="#" class="twittericon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twittericon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="twittericon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="twittericon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+        </div>
+
+        <script src="navbar.js"></script>
+        <script src="slider.js"></script>
+        <script src="favorite.js"></script>
+        <script src="quantity.js"></script>
+
+        <script>
+            const targetDateKey = 'timerTargetDate';
+            function initializeTimer() {
+                let targetDate = localStorage.getItem(targetDateKey);
+                if (!targetDate) {
+                    targetDate = new Date();
+                    targetDate.setHours(targetDate.getHours() + 5);
+                    localStorage.setItem(targetDateKey, targetDate);
+                } else {
+                    targetDate = new Date(targetDate);
+                }
+
+                function functionTimer() {
+                    const now = new Date();
+                    const timeDifference = targetDate - now;
+                    if (timeDifference <= 0) {
+                        document.getElementById('timer').innerHTML = "0 : 00 : 00";
+                        clearInterval(timerInterval);
+                        localStorage.removeItem(targetDateKey);
+                    } else {
+                        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                        document.getElementById('timer').innerHTML = `${hours} : ${minutes.toString().padStart(2, '0')} : ${seconds.toString().padStart(2, '0')}`;
+                    }
+                }
+                const timerInterval = setInterval(functionTimer, 1000);
+                functionTimer();
+            }
+
+            document.addEventListener('DOMContentLoaded', initializeTimer);
+        </script>
+
+        <script>
+            function setActivePage() {
+                const currentPage = window.location.pathname.split("/").pop();
+                const links = document.querySelectorAll('.explore-button, .featured-button, .daily-best-button');
+
+                links.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === currentPage) {
+                        link.classList.add('current');
+                    }
+                });
+            }
+
+            setActivePage();
+        </script>
+</body>
+
+</html>
